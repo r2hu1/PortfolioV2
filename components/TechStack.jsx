@@ -33,7 +33,7 @@ export const techstacks = [
 ];
 export default function TechStack() {
     return (
-        <div className="mb-14 px-5 w-fit mx-auto">
+        <div className="mb-14 px-3 w-fit mx-auto">
             <div className="border border-dashed rounded-md p-4 bg-background w-full">
                 <h1 className="text-lg font-medium text-center">
                     My <span className="animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">Tech Stack</span><span className="text-primary">.</span>

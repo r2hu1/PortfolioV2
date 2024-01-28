@@ -19,7 +19,7 @@ export const projects = [
 
 export default function Projects() {
     return (
-        <div className="mb-14 px-5 w-fit mx-auto">
+        <div className="mb-14 px-3 w-fit mx-auto">
             <div className="border border-dashed rounded-md p-4 bg-background">
                 <h1 className="text-lg font-medium text-center">
                     <span className="animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">Projects</span><span className="text-primary">.</span>
