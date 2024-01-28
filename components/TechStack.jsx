@@ -42,7 +42,7 @@ export default function TechStack() {
                 <div className="mt-6">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
                         {techstacks.map((techstack, index) => (
-                            <li key={index} className="p-3 md:hover:scale-105 cursor-pointer transition border rounded-md w-full md:w-auto">
+                            <li key={index} className="p-3 cursor-pointer transition border rounded-md w-full md:w-auto md:min-w-[300px]">
                                 <div className="flex flex-col">
                                     {techstack.icon}
                                     <h1 className="text-base">{techstack.title}</h1>
