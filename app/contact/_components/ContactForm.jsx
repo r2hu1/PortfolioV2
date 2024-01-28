@@ -31,7 +31,7 @@ export default function ContactForm() {
     }
 
     return (
-        <form method="POST" onSubmit={handleSubmit} className="flex flex-col gap-4 px-6">
+        <form method="POST" onSubmit={handleSubmit} className="flex flex-col gap-4 px-5">
             <div className="w-full max-w-md mx-auto">
                 <Label htmlFor="name">Full Name</Label>
                 <Input onChange={(e) => setName(e.target.value)} value={name} autocomplete="off" className="w-full" type="text" id="name" placeholder="John Deo" />
