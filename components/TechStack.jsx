@@ -4,52 +4,54 @@ import { DiNodejs } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 
+export const techstacks = [
+    {
+        icon: <IoLogoJavascript className="fill-yellow-400 w-7 h-7 hover:animate-pulse" />,
+        title: "JavaScript",
+        description: "A general-purpose, object-oriented scripting language."
+    },
+    {
+        icon: <SiTailwindcss className="fill-sky-400 w-7 h-7 hover:animate-pulse" />,
+        title: "TailwindCSS",
+        description: "A utility-first CSS framework for rapid UI development."
+    },
+    {
+        icon: <FaReact className="fill-sky-600 w-7 h-7 hover:animate-pulse" />,
+        title: "ReactJS",
+        description: "A JavaScript library for building user interfaces."
+    },
+    {
+        icon: <TbBrandNextjs className="w-7 h-7 hover:animate-pulse" />,
+        title: "NextJS",
+        description: "A React framework for server-side rendering."
+    },
+    {
+        icon: <DiNodejs className="fill-green-600 w-7 h-7 hover:animate-pulse" />,
+        title: "NodeJS",
+        description: "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+    }
+];
 export default function TechStack() {
     return (
         <div className="mb-10 px-6 md:px-20 lg:px-32 w-fit mx-auto">
-            <div className="border rounded-md px-5 py-4 bg-background">
+            <div className="border border-dashed rounded-md px-5 py-4 bg-background">
                 <h1 className="text-lg font-medium text-center">
-                    My <span className="text-primary">Tech</span> Stack<span className="text-primary"></span>
+                    My <span className="animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">Tech Stack</span><span className="text-primary">.</span>
                 </h1>
-                <p className="text-xs -mt-1 max-w-xs mx-auto text-center">Here are some<span className="text-primary">*</span> of the technologies I use for building my projects.</p>
+                <p className="text-center mx-auto text-xs max-w-sm -mt-1 text-gray-600 dark:text-gray-200">Here are some<span className="text-primary">*</span> of the technologies I use for building my projects.</p>
                 <div className="mt-6">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
-                        <li className="p-3 cursor-pointer transition border rounded-md w-full md:w-auto">
-                            <div className="flex flex-col">
-                                <h1 className="text-lg"><IoLogoJavascript className="fill-yellow-400 w-8 h-8 hover:animate-pulse" />JavaScript</h1>
-                                <p className="text-xs -mt-1">A general-purpose, object-oriented scripting language.</p>
-                            </div>
-                        </li>
-
-                        <li className="p-3 cursor-pointer transition border rounded-md w-full md:w-auto">
-                            <div className="flex flex-col">
-                                <h1 className="text-lg"><SiTailwindcss className="fill-blue-400 w-8 h-8 hover:animate-pulse" />TailwindCSS</h1>
-                                <p className="text-xs -mt-1">A utility-first CSS framework for rapid UI development.</p>
-                            </div>
-                        </li>
-
-                        <li className="p-3 cursor-pointer transition border rounded-md w-full md:w-auto">
-                            <div className="flex flex-col">
-                                <h1 className="text-lg"><DiNodejs className="fill-green-400 w-8 h-8 hover:animate-pulse" />NodeJS</h1>
-                                <p className="text-xs -mt-1">A JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
-                            </div>
-                        </li>
-
-                        <li className="p-3 cursor-pointer transition border rounded-md w-full md:w-auto">
-                            <div className="flex flex-col">
-                                <h1 className="text-lg"><TbBrandNextjs className="w-8 h-8 hover:animate-pulse" />NextJS</h1>
-                                <p className="text-xs -mt-1">A React framework for server-side rendering.</p>
-                            </div>
-                        </li>
-
-                        <li className="p-3 cursor-pointer transition border rounded-md w-full md:w-auto">
-                            <div className="flex flex-col">
-                                <h1 className="text-lg"><FaReact className="fill-blue-600 w-8 h-8 hover:animate-pulse" />ReactJS</h1>
-                                <p className="text-xs -mt-1">A JavaScript library for building user interfaces.</p>
-                            </div>
-                        </li>
+                        {techstacks.map((techstack, index) => (
+                            <li key={index} className="p-3 md:hover:scale-105 cursor-pointer transition border rounded-md w-full md:w-auto">
+                                <div className="flex flex-col">
+                                    {techstack.icon}
+                                    <h1 className="text-base">{techstack.title}</h1>
+                                    <p className="text-xs -mt-1">{techstack.description}</p>
+                                </div>
+                            </li>
+                        ))}
                     </ul>
-                    <p className="text-xs text-center">and counting...</p>
+                    <p className="text-xs text-center h-10 w-full max-w-md mx-auto border border-dashed flex items-center justify-center rounded-md">and many more...</p>
                 </div>
             </div>
         </div>
