@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ProjectCard(props) {
     return(
-        <div className="rounded-md border grid gap-2 p-3 w-fit bg-background">
+        <div className="rounded-md border grid gap-3 p-3 w-fit bg-background">
             <div>
                 <Image src={props.image} width={340} height={340} className="rounded-md bg-secondary aspect-video h-full w-full max-w-sm md:max-w-[370px] lg:w-[365px]"/>
             </div>

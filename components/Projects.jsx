@@ -8,14 +8,16 @@ export const projects = [
         description:"A music streaming platform that allows users to listen to music, search for songs...",
         github:"https://github.com/r2hu1/MusicHub",
         image:"/musichub.png",
+        link:"https://musichubs.vercel.app/",
     },
     {
         title:"E-Store",
         description:"An e-commerce that allows users to buy and sell products...",
         github:"https://github.com/r2hu1/EStore",
         image:"/estore.png",
+        link:"https://estorez.vercel.app/",
     },
-]
+];
 
 export default function Projects() {
     return (
