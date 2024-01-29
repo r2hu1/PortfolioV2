@@ -45,15 +45,15 @@ export default function ContactForm() {
         <form method="POST" onSubmit={handleSubmit} className="flex flex-col gap-4 px-5">
             <div className="w-full max-w-md mx-auto">
                 <Label htmlFor="name">Full Name</Label>
-                <Input onChange={(e) => setName(e.target.value)} value={name} autocomplete="off" className="w-full" type="text" id="name" placeholder="John Deo" />
+                <Input onChange={(e) => setName(e.target.value)} value={name} autoComplete="off" className="w-full" type="text" id="name" placeholder="John Deo" />
             </div>
             <div className="w-full max-w-md mx-auto">
                 <Label htmlFor="email">Email</Label>
-                <Input onChange={(e) => setEmail(e.target.value)} value={email} autocomplete="off" className="w-full" type="email" id="email" placeholder="johndeo@gmail.com" />
+                <Input onChange={(e) => setEmail(e.target.value)} value={email} autoComplete="off" className="w-full" type="email" id="email" placeholder="johndeo@gmail.com" />
             </div>
             <div className="w-full max-w-md mx-auto">
                 <Label htmlFor="message">Message</Label>
-                <Textarea onChange={(e) => setMessage(e.target.value)} value={message} autocomplete="off" id="message" placeholder="What's on your mind?" className="w-full min-h-[120px]"></Textarea>
+                <Textarea onChange={(e) => setMessage(e.target.value)} value={message} autoComplete="off" id="message" placeholder="What's on your mind?" className="w-full min-h-[120px]"></Textarea>
             </div>
             <div className="w-full max-w-md mx-auto mt-2 flex flex-col gap-2">
                 {/* <Button asChild variant="secondary" size="sm" className="text-xs w-fit"><a href="mailto:hi@rahul.eu.org">hi@rahul.eu.org</a></Button> */}
