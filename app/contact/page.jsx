@@ -1,5 +1,9 @@
-import { Button } from "@/components/ui/button";
 import ContactForm from "./_components/ContactForm";
+
+export const metadata = {
+    title: "Contact",
+    description: "Contact me for any inquiries or collaboration opportunities.",
+}
 
 export default function Page() {
     return (

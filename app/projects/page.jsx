@@ -1,6 +1,9 @@
 import ProjectCard from "@/components/ProjectCard";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+
+export const metadata = {
+    title: "Projects",
+    description: "Showcase of my projects i have built in my journey.",
+};
 
 export const projects = [
     {
@@ -18,46 +21,46 @@ export const projects = [
         link: "https://estorez.vercel.app/",
     },
     {
-        title:"Zenpay",
-        description:"An friction currency that allows users to send and receive money...",
-        github:"https://github.com/r2hu1/Zenpay",
-        image:"/zenpay.png",
-        link:"https://zenpay.vercel.app/",
+        title: "Zenpay",
+        description: "An friction currency that allows users to send and receive money...",
+        github: "https://github.com/r2hu1/Zenpay",
+        image: "/zenpay.png",
+        link: "https://zenpay.vercel.app/",
     },
     {
-        title:"DrawIT",
-        description:"A drawing app that allows users to draw on a canvas...",
-        github:"https://github.com/r2hu1/DrawIT",
-        image:"/drawit.png",
-        link:"https://draw-it-orcin.vercel.app/",
+        title: "DrawIT",
+        description: "A drawing app that allows users to draw on a canvas...",
+        github: "https://github.com/r2hu1/DrawIT",
+        image: "/drawit.png",
+        link: "https://draw-it-orcin.vercel.app/",
     },
     {
-        title:"DevPortfolio",
-        description:"A portfolio website for developers to showcase their work and showcase their skills...",
-        github:"https://github.com/r2hu1/DevPortfolio",
-        image:"/devportfolio.png",
-        link:"https://dev-portfolio-theta-gilt.vercel.app/",
+        title: "DevPortfolio",
+        description: "A portfolio website for developers to showcase their work and showcase their skills...",
+        github: "https://github.com/r2hu1/DevPortfolio",
+        image: "/devportfolio.png",
+        link: "https://dev-portfolio-theta-gilt.vercel.app/",
     },
     {
-        title:"Car Showcase",
-        description:"An e-commerce that allows users to know about cars...",
-        github:"https://github.com/r2hu1/Car-Showcase",
-        image:"/car-showcase.png",
-        link:"https://car-showcase-two-kappa.vercel.app/"
+        title: "Car Showcase",
+        description: "An e-commerce that allows users to know about cars...",
+        github: "https://github.com/r2hu1/Car-Showcase",
+        image: "/car-showcase.png",
+        link: "https://car-showcase-two-kappa.vercel.app/"
     },
     {
-        title:"Sh2re",
-        description:"An postimages alternative that allows users to upload and share images...",
-        github:"https://github.com/r2hu1/Sh2re",
-        image:"/sh2re.png",
-        link:"https://sh2re.vercel.app/",
+        title: "Sh2re",
+        description: "An postimages alternative that allows users to upload and share images...",
+        github: "https://github.com/r2hu1/Sh2re",
+        image: "/sh2re.png",
+        link: "https://sh2re.vercel.app/",
     },
     {
-        title:"Bytes Studio",
-        description:"A agancy website i built for a client for their agency...",
-        github:"https://github.com/r2hu1/BytesStudio",
-        image:"/bytes-studio.png",
-        link:"https://bytesstudio.vercel.app/",
+        title: "Bytes Studio",
+        description: "A agancy website i built for a client for their agency...",
+        github: "https://github.com/r2hu1/BytesStudio",
+        image: "/bytes-studio.png",
+        link: "https://bytesstudio.vercel.app/",
     }
 ];
 export default function Page() {
@@ -74,9 +77,9 @@ export default function Page() {
                             <ProjectCard key={index} {...project} />
                         ))}
                     </div>
+                    <p className="text-xs mt-5 text-center h-10 w-full max-w-sm mx-auto border border-dashed flex items-center justify-center rounded-md bg-background">and many more...</p>
                 </div>
             </div>
-            <p className="text-xs text-center h-10 w-full max-w-md mx-auto border border-dashed flex items-center justify-center rounded-md bg-background">and many more...</p>
         </div>
     )
 }
