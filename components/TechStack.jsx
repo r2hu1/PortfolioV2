@@ -52,7 +52,7 @@ export default function TechStack() {
                                 <div className="flex flex-col">
                                     {techstack.icon}
                                     <h1 className="text-base font-medium">{techstack.title}</h1>
-                                    <p className="text-xs -mt-1">{techstack.description}</p>
+                                    <p className="text-xs -mt-1 max-w-[365px]">{techstack.description}</p>
                                 </div>
                             </li>
                         ))}
