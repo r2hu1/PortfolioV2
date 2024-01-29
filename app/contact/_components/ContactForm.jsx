@@ -14,7 +14,7 @@ export default function ContactForm() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         setLoading(true);
         e.preventDefault();
         if (!name || !email || !message) {
@@ -22,12 +22,23 @@ export default function ContactForm() {
             setLoading(false);
             return;
         };
-        let a = document.createElement("a");
-        a.href = `mailto:hi@rahul.eu.org?subject=${name}&body=${message} - ${email}`;
-        a.setAttribute("target", "_blank");
-        a.click();
-        setSuccess(true);
-        setLoading(false);
+        const req = await fetch('/api/send/',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, email, message })
+        });
+        const res = await req.json();
+        if(res.data){
+            setSuccess(true);
+            setLoading(false);
+            toast.success("Thanks for contacting me. I'll get back to you soon.");
+        }
+        else{
+            toast.error(res.error);
+            setLoading(false);
+        }
     }
 
     return (
