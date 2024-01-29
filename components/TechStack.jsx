@@ -3,32 +3,38 @@ import { SiTailwindcss } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
+import { SiAppwrite } from "react-icons/si";
 
 export const techstacks = [
     {
-        icon: <IoLogoJavascript className="fill-yellow-400 w-7 h-7 hover:animate-pulse" />,
+        icon: <IoLogoJavascript className="fill-yellow-400 w-7 h-7" />,
         title: "JavaScript",
         description: "A general-purpose, object-oriented scripting language."
     },
     {
-        icon: <SiTailwindcss className="fill-sky-400 w-7 h-7 hover:animate-pulse" />,
+        icon: <SiTailwindcss className="fill-sky-400 w-7 h-7" />,
         title: "TailwindCSS",
         description: "A utility-first CSS framework for rapid UI development."
     },
     {
-        icon: <FaReact className="fill-sky-600 w-7 h-7 hover:animate-pulse" />,
+        icon: <FaReact className="fill-sky-600 w-7 h-7" />,
         title: "ReactJS",
         description: "A JavaScript library for building user interfaces."
     },
     {
-        icon: <TbBrandNextjs className="w-7 h-7 hover:animate-pulse" />,
+        icon: <TbBrandNextjs className="w-7 h-7" />,
         title: "NextJS",
         description: "A React framework for server-side rendering."
     },
     {
-        icon: <DiNodejs className="fill-green-600 w-7 h-7 hover:animate-pulse" />,
+        icon: <DiNodejs className="fill-green-600 w-7 h-7" />,
         title: "NodeJS",
         description: "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+    },
+    {
+        icon: <SiAppwrite className="fill-red-500 w-7 h-7" />,
+        title:"AppWrite",
+        description: "An open-source backend-as-a-service platform for building web and mobile apps."
     }
 ];
 export default function TechStack() {
