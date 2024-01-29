@@ -6,7 +6,7 @@ PortfolioV2 is a portfolio website for developers and ui designers to showcase t
 
 ## Demo
 
-[![Demo](https://img.shields.io/badge/Demo-https--rahulverma.netlify.app-green)](https://rahul.eu.org)
+[![Demo](rahul.eu.org)](https://rahul.eu.org)
 
 Homepage
 
