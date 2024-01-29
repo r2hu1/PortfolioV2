@@ -17,7 +17,6 @@ export const metadata = {
     template: "%s | Rahul Rajput",
   },
   description: "An extensive display of my full-stack development skills, experiences, and projects, demonstrating my proficiency and commitment to coding.",
-  // light and dark mode favicon
   icons: {
     icon: [
       {
@@ -33,8 +32,21 @@ export const metadata = {
         media: '(prefers-color-scheme: dark)',
       },
     ],
-  }
+  },
 };
+
+export const viewport = {
+  viewPort: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -42,8 +54,8 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
+          defaultTheme="system"
+          enableSystem={true}
           disableTransitionOnChange
         >
           <Header />
