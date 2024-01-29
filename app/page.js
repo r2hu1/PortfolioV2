@@ -14,7 +14,7 @@ export default function Page() {
           <p className="text-center md:text-sm text-xs mt-1 text-gray-600 dark:text-gray-200">An extensive display of my full-stack development skills, experiences, and projects, demonstrating my proficiency and commitment to coding<span className="text-primary">.</span></p>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <Button asChild><Link href="https://github.com/r2hu1">My Github</Link></Button>
+          <Button asChild><Link target="_blank" href="https://github.com/r2hu1">My Github</Link></Button>
           <Explore variant="outline" scrollto={460} />
         </div>
       </div>

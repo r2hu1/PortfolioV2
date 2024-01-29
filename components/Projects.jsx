@@ -4,18 +4,18 @@ import { Button } from "./ui/button";
 
 export const projects = [
     {
-        title:"MusicHub",
-        description:"A music streaming platform that allows users to listen to music, search for songs...",
-        github:"https://github.com/r2hu1/MusicHub",
-        image:"/musichub.png",
-        link:"https://musichubs.vercel.app/",
+        title: "MusicHub",
+        description: "A music streaming platform that allows users to listen to music, search for songs...",
+        github: "https://github.com/r2hu1/MusicHub",
+        image: "/musichub.png",
+        link: "https://musichubs.vercel.app/",
     },
     {
-        title:"E-Store",
-        description:"An e-commerce that allows users to buy and sell products...",
-        github:"https://github.com/r2hu1/EStore",
-        image:"/estore.png",
-        link:"https://estorez.vercel.app/",
+        title: "E-Store",
+        description: "An e-commerce that allows users to buy and sell products...",
+        github: "https://github.com/r2hu1/EStore",
+        image: "/estore.png",
+        link: "https://estorez.vercel.app/",
     },
 ];
 
@@ -33,7 +33,9 @@ export default function Projects() {
                             <ProjectCard key={index} {...project} />
                         ))}
                     </div>
-                    <Button asChild size="sm" className="w-full text-xs border-dashed" variant="outline"><Link href="/projects">View All</Link></Button>
+                    <div className="items-center justify-center flex">
+                        <Button asChild size="sm" className="w-full text-xs border-dashed max-w-md" variant="outline"><Link href="/projects">View All</Link></Button>
+                    </div>
                 </div>
             </div>
         </div>
