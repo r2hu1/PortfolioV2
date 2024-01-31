@@ -2,7 +2,7 @@
 
 [![Open Source](https://img.shields.io/badge/open%20source-yes-green)](https://github.com/rahulverma/PortfolioV2)
 
-PortfolioV2 is a portfolio website for developers and ui designers to showcase their skills and projects along with a fully working contact form.
+PortfolioV2 is a portfolio for developers and ui designers to showcase their skills and projects along with a fully working contact form.
 
 ![insits](/public/insits.png)
 
