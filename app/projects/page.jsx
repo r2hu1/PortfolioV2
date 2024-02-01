@@ -14,6 +14,13 @@ export const projects = [
         link: "https://musichubs.vercel.app/",
     },
     {
+        title:"TailwindBG",
+        description:"A list of Talwind CSS background grids and gradients to use in your projects...",
+        github:"https://github.com/r2hu1/tailwind-bg",
+        image:"/preview/Screenshot 2024-02-01 122917.png",
+        link:"https://tailwind-bg.vercel.app/"
+    },
+    {
         title: "E-Store",
         description: "An e-commerce that allows users to buy and sell products...",
         github: "https://github.com/r2hu1/EStore",
