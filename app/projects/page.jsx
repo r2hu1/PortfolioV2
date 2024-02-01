@@ -17,7 +17,7 @@ export const projects = [
         title:"TailwindBG",
         description:"A list of Talwind CSS background grids and gradients to use in your projects...",
         github:"https://github.com/r2hu1/tailwind-bg",
-        image:"/preview/tailwind-bg.png",
+        image:"/tailwind-bg.png",
         link:"https://tailwind-bg.vercel.app/"
     },
     {
