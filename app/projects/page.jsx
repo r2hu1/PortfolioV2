@@ -14,6 +14,13 @@ export const projects = [
         link: "https://musichubs.vercel.app/",
     },
     {
+        title: "MorUI",
+        description: "Beautifully designed components that you can copy and paste into your apps a...",
+        github: "https://github.com/r2hu1/mor-ui",
+        image: "/mor-ui.png",
+        link: "https://morui.vercel.app/",
+    },
+    {
         title:"TailwindBG",
         description:"A list of Talwind CSS background grids and gradients to use in your projects...",
         github:"https://github.com/r2hu1/tailwind-bg",
