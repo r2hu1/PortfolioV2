@@ -14,6 +14,13 @@ export const projects = [
         link: "https://musichubs.vercel.app/",
     },
     {
+        title:"IDE",
+        description:"A lightweight and minimalistic html, css, and javascript editor and compiler built using nextjs, tailwindcss and shadcn-ui. (codepen clone)",
+        github:"https://github.com/r2hu1/ide",
+        image:"/Screenshot%202024-02-17%20235536.png",
+        link:"https://i-de.vercel.app/",
+    },
+    {
         title: "MorUI",
         description: "Beautifully designed components that you can copy and paste into your apps a...",
         github: "https://github.com/r2hu1/mor-ui",
