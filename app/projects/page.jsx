@@ -14,10 +14,17 @@ export const projects = [
         link: "https://musichubs.vercel.app/",
     },
     {
+        title: "Culina Share",
+        description: "A recipe app with the ability to save, share and discover recipes from vario...",
+        github: "https://github.com/r2hu1/culina-share",
+        image: "/culina-share.png",
+        link: "https://culinashar-e.vercel.app/",
+    },
+    {
         title:"IDE",
         description:"A lightweight and minimalistic html, css, and javascript editor and compiler built using nextjs, tailwindcss and shadcn-ui. (codepen clone)",
         github:"https://github.com/r2hu1/ide",
-        image:"/Screenshot%202024-02-17%20235536.png",
+        image:"/ide.png",
         link:"https://i-de.vercel.app/",
     },
     {
