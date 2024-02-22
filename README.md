@@ -29,7 +29,11 @@ Contact Page
 
 ## How To Setup
 
-- Clone the repo
+- Form the repo
+- Clone your forked repo locally
+```bash
+git clone https://github.com/[username]/portfolioV2.git
+```
 - Run `yarn install` or `npm install`
 - Run `yarn dev` or `npm run dev`
 - Open http://localhost:3000 in your browser
