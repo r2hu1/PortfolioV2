@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import Link from "next/link";
 
 export default function ProjectCard(props) {
     return(
@@ -13,7 +12,7 @@ export default function ProjectCard(props) {
                 <p className="max-w-[300px] text-xs -mt-1 text-gray-600 dark:text-gray-200">{props.description}</p>
             </div>
             <div>
-                <Button className="w-full" size="sm" asChild><Link href={props.link || "/"}>View</Link></Button>
+                <Button className="w-full" size="sm" asChild><a href={props.link || "/"} target="_blank">View</a></Button>
             </div>
         </div>
     )
