@@ -29,7 +29,7 @@ export const projects = [
     },
     {
         title:"IDE",
-        description:"A lightweight and minimalistic html, css, and javascript editor and compiler built using nextjs, tailwindcss and shadcn-ui. (codepen clone)",
+        description:"A lightweight and minimalistic html, css, and javascript editor and compiler built u...",
         github:"https://github.com/r2hu1/ide",
         image:"/ide.png",
         link:"https://i-de.vercel.app/",
