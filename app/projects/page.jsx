@@ -21,6 +21,13 @@ export const projects = [
         link: "https://culinashar-e.vercel.app/",
     },
     {
+        title: "Sorting Visualizer",
+        description: "This sorting visualizer is a tool designed to help users understand and visualize v...",
+        github: "https://github.com/r2hu1/sorting-visualizer",
+        image: "/sorting-visualizer.png",
+        link: "https://sorting-visualizer-sand-one.vercel.app/",
+    },
+    {
         title: "Books Hub",
         description: "A platform for searching and saving books built with nextjs, tailwindcss an...",
         github: "https://github.com/r2hu1/bookshub",
