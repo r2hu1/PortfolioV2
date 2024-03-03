@@ -25,7 +25,6 @@ Contact Page
 - [Next.js](https://nextjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Shadcn](https://ui.shadcn.com/)
-- [Resend](https://www.resend.com/)
 
 ## How To Setup
 
